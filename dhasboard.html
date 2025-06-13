@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickzStyleHaven - Premium Shoe Store</title>
+    <link rel="stylesheet" href="dhasboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <h1><span class="text-red">Kickz</span>StyleHaven</h1>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="nav-links desktop-nav">
+                        <li><a href="/" class="nav-link active">Home</a></li>
+                        <li><a href="#men" class="nav-link">Men</a></li>
+                        <li><a href="/menu.html" class="nav-link">Women</a></li>
+                        <li><a href="#kids" class="nav-link">Kids</a></li>
+                        <li><a href="#sale" class="nav-link">Sale</a></li>
+                    </ul>
+
+                    <!-- Icons -->
+                    <div class="nav-icons desktop-nav">
+                        <button class="icon-btn" aria-label="Search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </svg>
+                        </button>
+                        <button class="icon-btn" aria-label="Favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="icon-btn" aria-label="Account">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="5"></circle>
+                                <path d="M20 21a8 8 0 1 0-16 0"></path>
+                            </svg>
+                        </button>
+                        <button class="icon-btn" aria-label="Cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                <path d="M3 6h18"></path>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button class="menu-toggle" id="menuToggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="menu-icon">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav" id="mobileNav">
+                    <ul class="nav-links">
+                        <li><a href="/" class="nav-link active">Home</a></li>
+                        <li><a href="#men" class="nav-link">Men</a></li>
+                        <li><a href="#women" class="nav-link">Women</a></li>
+                        <li><a href="#kids" class="nav-link">Kids</a></li>
+                        <li><a href="#sale" class="nav-link">Sale</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <button class="icon-btn" aria-label="Search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </svg>
+                        </button>
+                        <button class="icon-btn" aria-label="Favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="icon-btn" aria-label="Account">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="5"></circle>
+                                <path d="M20 21a8 8 0 1 0-16 0"></path>
+                            </svg>
+                        </button>
+                        <button class="icon-btn" aria-label="Cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                <path d="M3 6h18"></path>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <main>
+            <!-- Hero Banner -->
+            <section class="hero-banner">
+                <div class="hero-background"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Step Into Style</h1>
+                        <p>Discover our new collection of premium footwear designed for comfort and style</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">Shop Men</button>
+                            <button class="btn btn-outlined">Shop Women</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Products -->
+            <section class="featured-products section-alt">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>New Arrivals</h2>
+                        <a href="#" class="view-all">View All
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Air Max 270">
+                                <div class="product-badge new">NEW</div>
+                                <button class="wishlist-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Men's Running</div>
+                                <h3 class="product-name">Air Max 270</h3>
+                                <div class="product-price">$150.00</div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+                                    alt="Ultra Boost 21">
+                                <div class="product-badge discount">15% OFF</div>
+                                <button class="wishlist-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Women's Running</div>
+                                <h3 class="product-name">Ultra Boost 21</h3>
+                                <div class="product-price">
+                                    <span class="discounted-price">$153.00</span>
+                                    <span class="original-price">$180.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772"
+                                    alt="Classic Leather">
+                                <button class="wishlist-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Men's Casual</div>
+                                <h3 class="product-name">Classic Leather</h3>
+                                <div class="product-price">$80.00</div>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa"
+                                    alt="Zoom Pegasus">
+                                <div class="product-badge new">NEW</div>
+                                <button class="wishlist-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Women's Running</div>
+                                <h3 class="product-name">Zoom Pegasus</h3>
+                                <div class="product-price">$120.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categories -->
+            <section class="categories">
+                <div class="container">
+                    <h2 class="section-title">Shop By Category</h2>
+
+                    <div class="category-grid">
+                        <!-- Category 1 -->
+                        <div class="category-card">
+                            <div class="category-image"
+                                style="background-image: url('https://images.unsplash.com/photo-1531310197839-ccf54634509e')">
+                            </div>
+                            <div class="category-content">
+                                <h3>Men's Collection</h3>
+                                <a href="#men" class="btn btn-light">Shop Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Category 2 -->
+                        <div class="category-card">
+                            <div class="category-image"
+                                style="background-image: url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2')">
+                            </div>
+                            <div class="category-content">
+                                <h3>Women's Collection</h3>
+                                <a href="#women" class="btn btn-light">Shop Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Category 3 -->
+                        <div class="category-card">
+                            <div class="category-image"
+                                style="background-image: url('https://images.unsplash.com/photo-1471286174890-9c112ffca5b4')">
+                            </div>
+                            <div class="category-content">
+                                <h3>Kids' Collection</h3>
+                                <a href="#kids" class="btn btn-light">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Products -->
+            <section class="popular-products">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Bestsellers</h2>
+                        <a href="#" class="view-all">View All
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Additional products would go here, similar to the structure above -->
+                        <!-- Retro Jordan 4, Cloud Foam Runners, Chuck Taylor All Star, React Element -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Promo Section -->
+            <section class="promo-section">
+                <div class="container">
+                    <div class="promo-content">
+                        <div class="promo-text">
+                            <h2>Summer Sale</h2>
+                            <p>Get up to 50% off on selected items. Limited time offer.</p>
+                            <button class="btn btn-accent">Shop Now</button>
+                        </div>
+
+                        <div class="promo-image">
+                            <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3"
+                                alt="Summer Sale Promotion">
+                            <div class="promo-badge">50% OFF</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter -->
+            <section class="newsletter section-alt">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="mail-icon">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Stay updated with our latest collections, exclusive offers, and style tips.</p>
+
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Footer content would go here -->
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 KickzStyleHaven. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        menuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
